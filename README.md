@@ -1,2 +1,2 @@
-#BlairLeckie.github.io
+# BlairLeckie.github.io
 Professional Career webpage for Blair Leckie. 
