@@ -19,9 +19,10 @@
         - All choices support the goal of creating a digestible, interactive narrative of professional qualifications. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
-        body {
-            font-family: 'Playfair Display', serif;
-            background-color: #0F172A; /* slate 900 */
+       body {
+            font-family: 'Georgia', serif;
+            /* UPDATED: Switched to a dark theme */
+            background-color: #0F172A; /* slate-900 */
             color: #CBD5E1; /* slate-300 */
         }
         .nav-link {
@@ -29,8 +30,8 @@
             border-bottom: 2px solid transparent;
         }
         .nav-link.active, .nav-link:hover {
-            border-bottom-color: #60A5FA; /* text-blue-400 */
-            color: #93C5FD; /* text-blue-300 */
+            border-bottom-color: #3B82F6; /* blue-500 */
+            color: #3B82F6; /* blue-500 */
         }
         .content-section {
             display: none;
@@ -56,7 +57,7 @@
             width: 1.125rem;
             border-radius: 9999px;
             background-color: #0F172A; /* slate-900 */
-            border: 2px solid #9CA3AF; /* gray-400 */
+            border: 2px solid #64748B; /* slate-500 */
             transition: all 0.3s ease;
         }
         .timeline-item.active .timeline-dot {
@@ -73,17 +74,26 @@
             height: 400px;
             max-height: 50vh;
         }
+        /* Chart.js Dark Mode Styles */
+        .chartjs-tooltip {
+            background: rgba(30, 41, 59, 0.9) !important;
+            border: 1px solid #475569 !important;
+        }
     </style>
 </head>
 <body class="antialiased">
 
     <div class="container mx-auto p-4 md:p-8 max-w-7xl">
         <!-- Header -->
-        <header class="text-center md:text-left md:flex md:items-center md:justify-between border-b border-stone-300 pb-6 mb-6">
+        <header class="text-center md:text-left md:flex md:items-center md:justify-between border-b border-slate-700 pb-6 mb-6">
             <div class="flex flex-col md:flex-row items-center gap-6">
-                <!-- IMPORTANT: Change 'profile.jpg' to your actual image filename -->
-                <img src="BL-Headshot-8732.jpg" alt="Profile picture of Blair Leckie" class="w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-slate-700 shadow-md">
-                <div>
+                <!-- Stylized Icon representing project flow -->
+                <div class="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center bg-slate-800 rounded-lg border-2 border-slate-700 shadow-md">
+                    <svg class="w-20 h-20 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 1.085a1.5 1.5 0 01-1.996 0l-1.94-2.134A1.5 1.5 0 005.18 15.085L4.5 14.25m9 2.25l1-1.085a1.5 1.5 0 00-1.996 0l-1.94 2.134A1.5 1.5 0 0112.82 15.085L12 14.25m-9-11.25h18" />
+                    </svg>
+                </div>
+                </div>
                     <h1 class="text-4xl md:text-5xl font-bold text-white">Blair Leckie</h1>
                     <p class="text-xl md:text-2xl text-blue-400 font-medium mt-1">Production Management</p>
                 </div>
