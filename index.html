@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blair Leckie - Production Management</title>
+    <title>Blair Leckie - Production Management </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Warm Taupe & Slate -->
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Dark Slate -->
     <!-- Application Structure Plan: The application is structured as a tabbed, single-page dashboard. This design was chosen to allow busy recruiters to quickly navigate to the sections that interest them most (e.g., jumping straight to the interactive career timeline or skills) rather than scrolling through a linear document. The key interaction is the "Career Journey" timeline, which visualizes progression and allows users to click on roles to see details, creating a more engaging narrative of professional growth than a static list. This user-driven exploration is more efficient and memorable. -->
     <!-- Visualization & Content Choices: 
         - Professional Summary/Competencies (Inform): Presented as clean text and tags for a quick overview.
@@ -19,7 +19,7 @@
         - All choices support the goal of creating a digestible, interactive narrative of professional qualifications. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
-       body {
+        body {
             font-family: 'Georgia', serif;
             /* UPDATED: Switched to a dark theme */
             background-color: #0F172A; /* slate-900 */
@@ -30,8 +30,8 @@
             border-bottom: 2px solid transparent;
         }
         .nav-link.active, .nav-link:hover {
-            border-bottom-color: #3B82F6; /* blue-500 */
-            color: #3B82F6; /* blue-500 */
+            border-bottom-color: #FFFFFF; /* white */
+            color: #FFFFFF; /* white */
         }
         .content-section {
             display: none;
@@ -93,22 +93,20 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 1.085a1.5 1.5 0 01-1.996 0l-1.94-2.134A1.5 1.5 0 005.18 15.085L4.5 14.25m9 2.25l1-1.085a1.5 1.5 0 00-1.996 0l-1.94 2.134A1.5 1.5 0 0112.82 15.085L12 14.25m-9-11.25h18" />
                     </svg>
                 </div>
-                </div>
+                <div>
                     <h1 class="text-4xl md:text-5xl font-bold text-white">Blair Leckie</h1>
                     <p class="text-xl md:text-2xl text-blue-400 font-medium mt-1">Production Management</p>
                 </div>
             </div>
-            <div class="mt-4 md:mt-0 flex justify-center space-x-4 text-sm text-slate-600">
-                <a href="#" class="hover:text-teal-600">1 604-612-5257</a>
-                <span>|</span>
-                <a href="#" class="hover:text-teal-600">leckie.b@gmail.com</a>
-                <span>|</span>
-                <a href="#" class="hover:text-teal-600">https://www.linkedin.com/in/blair-leckie/</a>
+            <div class="mt-4 md:mt-0 flex flex-col items-center md:items-end space-y-2 text-sm">
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">1-604-612-5257</a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">leckie.b@gmail.com</a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">http://linkedin.com/in/blair-leckie-1009a625</a>
             </div>
         </header>
 
         <!-- Navigation -->
-        <nav class="flex justify-center items-center space-x-4 sm:space-x-8 mb-8 sticky top-0 bg-stone-100/80 backdrop-blur-sm py-4 z-10">
+        <nav class="flex justify-center items-center space-x-4 sm:space-x-8 mb-8 sticky top-0 py-4 z-10 text-slate-300">
             <button class="nav-link active font-semibold px-2 py-1" data-target="overview">Overview</button>
             <button class="nav-link font-semibold px-2 py-1" data-target="journey">Career Journey</button>
             <button class="nav-link font-semibold px-2 py-1" data-target="skills">Skills & Expertise</button>
@@ -119,32 +117,32 @@
         <main>
             <!-- Overview Section -->
             <section id="overview" class="content-section active">
-                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Professional Summary</h2>
-                    <p class="text-slate-600 leading-relaxed">
-                        A strategic and visionary Senior Project Manager with a 15+ year career defined by architecting the successful delivery of complex, multi-million dollar projects across a global landscape. Adept at navigating the intersection of creative vision and technical execution, I transform ambitious strategic objectives into tangible results. As a certified Scrum Master and Product Owner, I have repeatedly demonstrated a capacity for galvanizing large-scale, distributed teams—sometimes exceeding 30 members—and stewarding budgets of up to $4M. My expertise lies in dissecting intricate challenges, pioneering innovative process improvements, and orchestrating high-stakes initiatives to deliver unparalleled value, consistently on time and under budget.
+                <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-200 mb-4">Professional Summary</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        A Production professional with 15+ years experience helping teams architect and develop complex pipelines to deliver contecnt for a number of high-stakes projects. Adept at navigating the intersection of creative vision and technical execution, I transform ambitious objectives into tangible results. As a certified Scrum Master and Product Owner, I repeatedly demonstrate a capacity for galvanizing large-scale, distributed teams—sometimes exceeding 30 members—and stewarding budgets of up to $4M. My expertise lies in dissecting intricate challenges, pioneering innovative process improvements, and orchestrating high-stakes initiatives to deliver unparalleled value, consistently on time and under budget.
                     </p>
                 </div>
-                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm mt-8">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6">Core Competencies</h2>
+                <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm mt-8">
+                    <h2 class="text-2xl font-bold text-slate-200 mb-6">Core Competencies</h2>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Full-Cycle Project Architecture</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Budget Stewardship</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Global Team Leadership</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Process Re-engineering</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Predictive Risk Analysis</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Stakeholder Engagement</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Vendor & Client Cultivation</p></div>
-                        <div class="bg-stone-100 p-3 rounded-md text-center"><p class="font-medium text-slate-700 text-sm">Data-Driven Reporting</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Full-Cycle Project Architecture</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Budget Stewardship</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Global Team Leadership</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Process Re-engineering</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Predictive Risk Analysis</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Stakeholder Engagement</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Vendor & Client Cultivation</p></div>
+                        <div class="bg-slate-700 p-3 rounded-md text-center"><p class="font-medium text-slate-300 text-sm">Data-Driven Reporting</p></div>
                     </div>
                 </div>
             </section>
 
             <!-- Career Journey Section -->
             <section id="journey" class="content-section">
-                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-2">Career Journey at Electronic Arts</h2>
-                     <p class="text-slate-500 mb-8">This section provides an interactive overview of my professional growth, detailing the increasing scope of responsibility in team leadership and budget management over 15+ years. Click on a role in the timeline below to see the specific details and accomplishments associated with that position.</p>
+                <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-200 mb-2">Career Journey at Electronic Arts</h2>
+                     <p class="text-slate-400 mb-8">This section provides an interactive overview of my professional growth, detailing the increasing scope of responsibility in team leadership and budget management over 15+ years. Click on a role in the timeline below to see the specific details and accomplishments associated with that position.</p>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <!-- Timeline -->
                         <div class="lg:col-span-1">
@@ -154,18 +152,18 @@
                         </div>
 
                         <!-- Details -->
-                        <div class="lg:col-span-2 bg-stone-50 p-6 rounded-lg">
-                            <h3 id="role-title" class="text-xl font-bold text-teal-700"></h3>
-                            <p id="role-dates" class="text-sm font-medium text-slate-500 mb-4"></p>
-                            <div id="role-details" class="space-y-3 text-slate-600">
+                        <div class="lg:col-span-2 bg-slate-800/50 p-6 rounded-lg">
+                            <h3 id="role-title" class="text-xl font-bold text-blue-500"></h3>
+                            <p id="role-dates" class="text-sm font-medium text-slate-400 mb-4"></p>
+                            <div id="role-details" class="space-y-3 text-slate-300">
                                 <!-- Role details will be injected here by JS -->
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm mt-8">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Growth in Leadership Scope</h2>
-                     <p class="text-slate-500 mb-8">The following chart visualizes the progression of my leadership responsibilities, tracking both the size of the teams I've managed and the scale of the budgets under my stewardship across different roles.</p>
+                 <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm mt-8">
+                    <h2 class="text-2xl font-bold text-slate-200 mb-4">Growth in Leadership Scope</h2>
+                     <p class="text-slate-400 mb-8">The following chart visualizes the progression of my leadership responsibilities, tracking both the size of the teams I've managed and the scale of the budgets under my stewardship across different roles.</p>
                     <div class="chart-container">
                         <canvas id="careerChart"></canvas>
                     </div>
@@ -175,26 +173,26 @@
             <!-- Skills Section -->
             <section id="skills" class="content-section">
                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                        <h2 class="text-2xl font-bold text-slate-800 mb-4">Project Management Proficiencies</h2>
-                         <p class="text-slate-500 mb-8">This visualization highlights my core strengths across the key domains of modern project management, reflecting a balanced expertise in both strategic planning and tactical execution.</p>
+                    <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-bold text-slate-200 mb-4">Project Management Proficiencies</h2>
+                         <p class="text-slate-400 mb-8">This visualization highlights my core strengths across the key domains of modern project management, reflecting a balanced expertise in both strategic planning and tactical execution.</p>
                         <div class="chart-container" style="height: 350px; max-height: 45vh;">
                            <canvas id="skillsRadarChart"></canvas>
                         </div>
                     </div>
                     <div class="space-y-8">
-                        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                            <h2 class="text-2xl font-bold text-slate-800 mb-4">Methodologies</h2>
+                        <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm">
+                            <h2 class="text-2xl font-bold text-slate-200 mb-4">Methodologies</h2>
                             <div class="flex space-x-6 items-center">
-                                <span class="text-teal-600 text-2xl">➔</span>
-                                <p class="font-semibold text-slate-700">Agile, Scrum, Waterfall</p>
+                                <span class="text-blue-500 text-2xl">➔</span>
+                                <p class="font-semibold text-slate-300">Agile, Scrum, Waterfall</p>
                             </div>
                         </div>
-                        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                            <h2 class="text-2xl font-bold text-slate-800 mb-4">Technical Toolkit</h2>
+                        <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm">
+                            <h2 class="text-2xl font-bold text-slate-200 mb-4">Technical Toolkit</h2>
                             <div class="space-y-2">
-                                <p class="font-semibold text-slate-600">Project Management Software: <span class="font-normal">Jira, ShotGrid, Monday.com, Trello</span></p>
-                                <p class="font-semibold text-slate-600">Productivity Suites: <span class="font-normal">Microsoft Office Suite, Google Workspace</span></p>
+                                <p class="font-semibold text-slate-400">Project Management Software: <span class="font-normal text-slate-300">Jira, ShotGrid, Monday.com, Trello</span></p>
+                                <p class="font-semibold text-slate-400">Productivity Suites: <span class="font-normal text-slate-300">Microsoft Office Suite, Google Workspace</span></p>
                             </div>
                         </div>
                     </div>
@@ -203,32 +201,32 @@
             
             <!-- Education Section -->
             <section id="education" class="content-section">
-                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6">Certifications & Education</h2>
+                <div class="bg-slate-800 p-6 sm:p-8 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold text-slate-200 mb-6">Certifications & Education</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="border border-teal-200 bg-teal-50/50 p-4 rounded-lg">
-                            <p class="font-bold text-teal-800">Certified Scrum Master (CSM)</p>
-                            <p class="text-sm text-slate-600">Scrum Alliance</p>
+                        <div class="border border-blue-800 bg-blue-900/20 p-4 rounded-lg">
+                            <p class="font-bold text-blue-400">Certified Scrum Master (CSM)</p>
+                            <p class="text-sm text-slate-400">Scrum Alliance</p>
                         </div>
-                        <div class="border border-teal-200 bg-teal-50/50 p-4 rounded-lg">
-                            <p class="font-bold text-teal-800">Certified Scrum Product Owner (CSPO)</p>
-                            <p class="text-sm text-slate-600">Scrum Alliance</p>
+                        <div class="border border-blue-800 bg-blue-900/20 p-4 rounded-lg">
+                            <p class="font-bold text-blue-400">Certified Scrum Product Owner (CSPO)</p>
+                            <p class="text-sm text-slate-400">Scrum Alliance</p>
                         </div>
-                        <div class="border border-stone-200 bg-stone-50 p-4 rounded-lg">
-                            <p class="font-bold text-slate-700">Stagecraft Technology & Production Management</p>
-                            <p class="text-sm text-slate-600">Douglas Community College</p>
+                        <div class="border border-slate-700 bg-slate-700/20 p-4 rounded-lg">
+                            <p class="font-bold text-slate-300">Stagecraft Technology & Production Management</p>
+                            <p class="text-sm text-slate-400">Douglas Community College</p>
                         </div>
-                        <div class="border border-stone-200 bg-stone-50 p-4 rounded-lg">
-                            <p class="font-bold text-slate-700">Red Seal Certified Chef</p>
-                            <p class="text-sm text-slate-600">Vancouver Community College</p>
+                        <div class="border border-slate-700 bg-slate-700/20 p-4 rounded-lg">
+                            <p class="font-bold text-slate-300">Red Seal Certified Chef</p>
+                            <p class="text-sm text-slate-400">Vancouver Community College</p>
                         </div>
-                         <div class="border border-stone-200 bg-stone-50 p-4 rounded-lg">
-                            <p class="font-bold text-slate-700">Leadership & Management Training</p>
-                            <p class="text-sm text-slate-600">Electronic Arts Inc.</p>
+                         <div class="border border-slate-700 bg-slate-700/20 p-4 rounded-lg">
+                            <p class="font-bold text-slate-300">Leadership & Management Training</p>
+                            <p class="text-sm text-slate-400">Electronic Arts Inc.</p>
                         </div>
-                         <div class="border border-stone-200 bg-stone-50 p-4 rounded-lg">
-                            <p class="font-bold text-slate-700">Financial Intelligence Training</p>
-                            <p class="text-sm text-slate-600">Electronic Arts Inc.</p>
+                         <div class="border border-slate-700 bg-slate-700/20 p-4 rounded-lg">
+                            <p class="font-bold text-slate-300">Financial Intelligence Training</p>
+                            <p class="text-sm text-slate-400">Electronic Arts Inc.</p>
                         </div>
                     </div>
                 </div>
@@ -238,13 +236,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Set default Chart.js styles for dark mode
+            Chart.defaults.color = '#94A3B8'; // slate-400
+            Chart.defaults.borderColor = '#334155'; // slate-700
+            
             const navLinks = document.querySelectorAll('.nav-link');
             const contentSections = document.querySelectorAll('.content-section');
 
             const experienceData = {
                 pm_dd: {
                     title: 'Project Management, Development Director',
-                    dates: 'Dec 2023 – Present',
+                    dates: 'Dec 2023 – April 2025',
                     details: [
                         'Orchestrate the end-to-end project lifecycle for marquee development initiatives, forging critical partnerships with senior leadership to architect project plans that synthesize both ambitious strategic mandates and nuanced creative goals.',
                         'Command a globally distributed team of six project managers. My directive: instill a culture of precision in budget estimation, timeline management, and resource allocation to relentlessly drive toward production targets.',
@@ -312,8 +314,8 @@
                 item.dataset.role = key;
                 item.innerHTML = `
                     <div class="timeline-dot"></div>
-                    <p class="font-bold text-slate-700">${role.title}</p>
-                    <p class="text-sm text-slate-500">${role.dates}</p>
+                    <p class="font-bold text-slate-300">${role.title}</p>
+                    <p class="text-sm text-slate-400">${role.dates}</p>
                 `;
                 item.addEventListener('click', () => updateRoleDetails(key));
                 timelineContainer.appendChild(item);
@@ -357,16 +359,16 @@
                         {
                             label: 'Team Size (Personnel)',
                             data: [2, 5, 12, 32, 6],
-                            backgroundColor: '#14B8A6', // teal-500
-                            borderColor: '#0D9488', // teal-600
+                            backgroundColor: 'rgba(59, 130, 246, 0.7)', // blue-500
+                            borderColor: '#3B82F6', // blue-500
                             borderWidth: 1,
                             yAxisID: 'y'
                         },
                         {
                             label: 'Budget Managed ($M)',
-                            data: [0, 0.5, 1, 4, 3], // Example values
-                            backgroundColor: '#64748B', // slate-500
-                            borderColor: '#475569', // slate-600
+                            data: [0, 0.5, 1, 4, 3], 
+                            backgroundColor: 'rgba(100, 116, 139, 0.7)', // slate-500
+                            borderColor: '#64748B', // slate-500
                             borderWidth: 1,
                             yAxisID: 'y1'
                         }
@@ -379,6 +381,11 @@
                         responsive: true,
                         maintainAspectRatio: false,
                         scales: {
+                            x: {
+                                grid: {
+                                    color: '#1E293B' // slate-800
+                                }
+                            },
                             y: {
                                 type: 'linear',
                                 display: true,
@@ -386,6 +393,9 @@
                                 title: {
                                     display: true,
                                     text: 'Team Size'
+                                },
+                                grid: {
+                                    color: '#334155' // slate-700
                                 }
                             },
                             y1: {
@@ -403,6 +413,11 @@
                         },
                         plugins: {
                             tooltip: {
+                                backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                                titleColor: '#F1F5F9',
+                                bodyColor: '#CBD5E1',
+                                borderColor: '#475569',
+                                borderWidth: 1,
                                 callbacks: {
                                     label: function(context) {
                                         let label = context.dataset.label || '';
@@ -434,12 +449,12 @@
                         label: 'Proficiency Level',
                         data: [9, 9, 8, 9, 8, 10],
                         fill: true,
-                        backgroundColor: 'rgba(13, 148, 136, 0.2)', // teal-600 transparent
-                        borderColor: '#0D9488', // teal-600
-                        pointBackgroundColor: '#0D9488',
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)', 
+                        borderColor: '#3B82F6', 
+                        pointBackgroundColor: '#3B82F6',
                         pointBorderColor: '#fff',
                         pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: '#0D9488'
+                        pointHoverBorderColor: '#3B82F6'
                     }]
                 };
                 const config = {
@@ -451,18 +466,32 @@
                          scales: {
                             r: {
                                 angleLines: {
-                                    display: false
+                                    color: '#334155' // slate-700
+                                },
+                                grid: {
+                                    color: '#334155' // slate-700
+                                },
+                                pointLabels: {
+                                    color: '#CBD5E1' // slate-300
                                 },
                                 suggestedMin: 0,
                                 suggestedMax: 10,
                                 ticks: {
-                                    display: false
+                                    backdropColor: 'rgba(0,0,0,0)',
+                                    color: '#94A3B8' // slate-400
                                 }
                             }
                         },
                         plugins: {
                             legend: {
                                 display: false
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                                titleColor: '#F1F5F9',
+                                bodyColor: '#CBD5E1',
+                                borderColor: '#475569',
+                                borderWidth: 1
                             }
                         }
                     }
